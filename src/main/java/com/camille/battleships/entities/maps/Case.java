@@ -8,7 +8,6 @@ public class Case {
 		return contenu;
 	}
 	
-	}
 	private int y;
 	private int x;
 	private String contenu;

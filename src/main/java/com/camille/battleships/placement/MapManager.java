@@ -31,22 +31,44 @@ public class MapManager {
 			joueur.getShipsArray().add(new PorteAvion()); 
 		}
 				
-		public ArrayList<Case> PlacementBateaux(Bateaux Boats,Joueur Joueurs) {
-		
+		public void PlacementBateaux(Bateaux Boats,Joueur Joueurs) {
+			int x;
+			int y;
+			
 			for(int i = 0; i < Joueurs.getShipsArray().size(); i++) {
-				int x = (int)(Math.random() * 18);
-				int y = (int)(Math.random() * 24);
-				int id = i;
-				Boats.getMaCase().add(new Case());
-				int j = (int)Math.random()*2;
-				if (j == 0) {
-					for (int b = 0; b < ships.getL()-1; b++) {
-						Boats.getMaCase().add(new Case());}
-				}else {
-					for (int b = 0; b < ships.getL()-1; b++) {
-						Boats.getMaCase().add(new Case());} 
+				do{
+					x = (int)(Math.random() * 18);
+					y = (int)(Math.random() * 24);
+					Boats.getMaCase().add(new Case());
+					int j = (int)Math.random()*2;
+					if (j == 0) {
+						for (int b = 0; b < ships.getL()-1; b++) {
+							y = y+1;
+							Boats.getMaCase().add(new Case());}
+					}else {
+						for (int b = 0; b < ships.getL()-1; b++) {
+							x = x+1;
+							Boats.getMaCase().add(new Case());}
+							}
+					} while ( x > 24 || y > 18);
+			}	
+		}	
+		public void MapMaker(Bateaux Boats, Joueur joueurs) {
+			
+			for(int jou = 0; jou < 2; jou++) {
+				for(int l = 0; l < 24; l++) {
+					for(int h =0; h < 18; h++) {
+						for(Boats.getMaCase().get(id); Boats.getMaCase(id) < Boats.getMaCase().size(); Boats.getMaCase().increment(1)) {
+							if (l == Boats.getMaCase().get(x) && h == Boats.getMaCase().get(y) ){
+								System.out.println(" X");
+							}else {
+								System.out.println(" ()");
+							}
+					}
+					}
 				}
 			}
-			return ;
+				
+			
 		}
 }
