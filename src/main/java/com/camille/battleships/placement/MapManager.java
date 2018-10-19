@@ -1,16 +1,18 @@
 package com.camille.battleships.placement;
 
+import com.camille.battleships.entities.bateaux.Bateaux;
+
+
 public class MapManager {
 
-
-	public static void main(String[] args) {
-		
-		int tab[][] = 0;
-		
-		for(int i = 0; i<24; i++) {
-			for(int j = 0; j<18; j++) {
-				System.out.println(tab[0][0]);
-			}
-		}
- 	}
+	private int tailleX = 24;
+	private int tailleY = 18;
+	
+	private Bateaux ship;
+	
+	public MapManager (Bateaux ship) {
+	super();
+	this.ship = ship;
+ 	
+	}
 }

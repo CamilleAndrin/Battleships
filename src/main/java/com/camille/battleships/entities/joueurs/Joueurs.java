@@ -1,16 +1,18 @@
 package com.camille.battleships.entities.joueurs;
 
+import java.util.ArrayList;
+
 import com.camille.battleships.entities.bateaux.Bateaux;
 
 public class Joueurs {
 
-	private Bateaux ship;
+	private ArrayList<Bateaux> shipsArray = new ArrayList<Bateaux>();
 	
-	public Joueurs (Bateaux ship) {
+	public Joueurs (ArrayList<Bateaux> ships) {
 	super();
-	this.ship = ship;
+	this.shipsArray = ships;
 }
-		private int idj; 
-		
+ 
+			
 		 
 }
