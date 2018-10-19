@@ -32,18 +32,21 @@ public class MapManager {
 		}
 				
 		public ArrayList<Case> PlacementBateaux(Bateaux Boats,Joueur Joueurs) {
-			
-				for(int i = 0; i < this.tailleY ; i++){			
-					for(int j = 0; j < this.tailleX ; j++){
-						
-					}
-				}		
 		
-		
-		
-		
-		
-		
-		return result;
-	}
+			for(int i = 0; i < Joueurs.getShipsArray().size(); i++) {
+				int x = (int)(Math.random() * 18);
+				int y = (int)(Math.random() * 24);
+				int id = i;
+				Boats.getMaCase().add(new Case());
+				int j = (int)Math.random()*2;
+				if (j == 0) {
+					for (int b = 0; b < ships.getL()-1; b++) {
+						Boats.getMaCase().add(new Case());}
+				}else {
+					for (int b = 0; b < ships.getL()-1; b++) {
+						Boats.getMaCase().add(new Case());} 
+				}
+			}
+			return ;
+		}
 }

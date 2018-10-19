@@ -16,7 +16,7 @@ public abstract class Bateaux {
 	public int getId() {
 		return id;
 	}
-	public ArrayList<Case> getShipsArray() {
+	public ArrayList<Case> getMaCase() {
 		return maCase;
 	}
 	
