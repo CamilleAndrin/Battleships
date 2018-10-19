@@ -4,11 +4,11 @@ import java.util.ArrayList;
 
 import com.camille.battleships.entities.bateaux.Bateaux;
 
-public class Joueurs {
+public class Joueur {
 
 	private ArrayList<Bateaux> shipsArray = new ArrayList<Bateaux>();
 	
-	public Joueurs (ArrayList<Bateaux> ships) {
+	public Joueur (ArrayList<Bateaux> ships) {
 	super();
 	this.shipsArray = ships;
 }
